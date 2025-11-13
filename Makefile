@@ -1,7 +1,7 @@
 all: clean build
 
 
-deploy: clean install build
+deploy: install build
 
 
 install:
