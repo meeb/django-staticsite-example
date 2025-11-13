@@ -19,3 +19,7 @@ staticsite:
 clean:
 	rm -rf docs
 	rm -rf django-staticsite-example/static
+
+
+runserver:
+	uv run django-staticsite-example/manage.py runserver
