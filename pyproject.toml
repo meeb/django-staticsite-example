@@ -1,0 +1,13 @@
+[project]
+name = "django-staticsite-example"
+version = "0.1.0"
+description = "Example Django powered static site using django-staticsite"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.2.8",
+    "django-staticsite",
+]
+
+[tool.uv.sources]
+django-staticsite = { git = "https://github.com/meeb/django-staticsite" }
