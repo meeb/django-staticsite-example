@@ -1,7 +1,7 @@
 all: clean build
 
 
-deploy: clean install build
+deploy: clean install staticsite
 
 
 install:
@@ -9,9 +9,7 @@ install:
 	uv sync
 
 
-build:
-	pip install uv
-	uv sync
+staticsite:
 	mkdir -p docs
 	mkdir -p django-staticsite-example/static
 	uv run django-staticsite-example/manage.py collectstatic --noinput
